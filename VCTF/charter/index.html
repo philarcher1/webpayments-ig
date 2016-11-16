@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <title>[EDITOR'S DRAFT] Verifiable Claims Working Group</title>
     <link rel="stylesheet" href="//www.w3.org/2005/10/w3cdoc.css" type="text/css" media="screen"/>
-    <link rel="stylesheet" type="text/css" href="//www.w3.org/Guide/pubrules-style.css"/>
-    <link rel="stylesheet" type="text/css" href="//www.w3.org/2006/02/charter-style.css"/>
+    <link rel="stylesheet" type="text/css" href="http://www.w3.org/Guide/pubrules-style.css"/>
+    <link rel="stylesheet" type="text/css" href="http://www.w3.org/2006/02/charter-style.css"/>
 </head>
 
 <body>
@@ -155,10 +155,10 @@ Recommend a data model and syntax(es) for the expression of verifiable claims,
 including one or more core vocabularies.
     </li>
     <li>
-Create a note specifying how these data models should be used with existing
-attribute exchange protocols, a suggestion that existing protocols
-should be modified, or a suggestion that a new protocol is required to
-address the problems stated earlier in this document.
+Create a note specifying one or more of<ol style="list-style-type:lower-roman">
+  <li>how these data models should be used with existing attribute exchange protocols;</li>
+  <li>a suggestion that existing protocols be modified;</li>
+  <li>a suggestion that a new protocol is required.</li></ol>
     </li>
     <li>
 Focus their efforts on the identified
@@ -173,12 +173,11 @@ included if there is significant industry participation.
   <ol>
     <li>Define browser-based APIs for interacting with verifiable claims. This work may be performed by a future Working Group if there is interest, but is not required for the Working Group to be successful.</li>
     <li>Define a new protocol for attribute exchange. This work may be performed by a future Working Group if there is interest, but is not required for the Working Group to be successful.</li>
-    <li>Attempt to create supporting infrastructure, other than a data model and syntax(es), for a verifiable claims ecosystem.</li>
+    <li>Attempt to lead the creation of a specific style of supporting infrastructure, other than a data model and syntax(es), for a verifiable claims ecosystem.</li>
     <li>Attempt to address the larger problem of "Identity on the Web/Internet".</li>
   </ol>
 
 	<h3 id="terminology">Terminology</h3>
-
 	<dl>
 	  <dt id="claim"><strong>verifiable claim</strong></dt>
       <dd>A machine-readable statement made by an entity that is cryptographically authentic (non-repudiable).</dd>
@@ -187,7 +186,6 @@ included if there is significant industry participation.
 	</dl>
 
     <h3 id="security">Security and Privacy Considerations</h3>
-
    <p>
 In general, the issuers of verifiable claims want to ensure that their
 reputation is protected, the holders of verifiable claims want to
@@ -217,7 +215,7 @@ such data.
 
 	<p>
 The Working Group will work with the security and privacy organizations
-listed in the liaisons section of the charter to help ensure that
+listed in the <a href="#coordination">liaisons</a> section of the charter to help ensure that
 both security and privacy are considered.
     </p>
 
@@ -233,7 +231,7 @@ be able to be used by people with a variety of disabilities.
 
    <p>
 The Working Group will work with the internationalization and
-accessibility organizations listed in the liaisons section of the charter
+accessibility organizations listed in the <a href="#coordination">liaisons</a> section of the charter
 to help ensure that both internationalization and accessibility are
 considered.
    </p>
@@ -241,6 +239,9 @@ considered.
     </div>
     <div>
       <h2 id="deliverables">Deliverables</h2>
+
+        <h3 id="vc-ucr">Verifiable Claims Use Cases &amp; Requirements NOTE</h3>
+<p>The Working Group will develop a set of use cases and requirements to underpin its work. Abstract use cases will be supported by real world evidence of applicability.</p>
 
         <h3 id="vc-data-model">Verifiable Claims Data Model and Syntax Recommendation</h3>
 
@@ -257,19 +258,13 @@ considered.
             </li>
         </ul>
 
-        <h3 id="vc-implementation-guidance">Verifiable Claims Implementation Guidance</h3>
+        <h3 id="vc-implementation-guidance">Verifiable Claims Implementation Guidance NOTE</h3>
 
         <p>This NOTE will define or identify:</p>
         <ul>
-            <li>
-How the data model and syntax can be used with existing attribute exchange architectures to address all of the problems stated in this document, or
-            </li>
-            <li>
-How the data model and syntax can be used with a set of modifications to existing attribute exchange architectures, or
-            </li>
-            <li>
-If a new attribute exchange protocol is needed and if so, requirements for that protocol to address the problems identified in this document.
-            </li>
+            <li>how the data model and syntax can be used with existing attribute exchange architectures to address all of the problems stated in this charter; or</li>
+            <li>how the data model and syntax can be used with a set of modifications to existing attribute exchange architectures; or</li>
+            <li>whether a new attribute exchange protocol is needed and, if so, requirements for that protocol to address.</li>
         </ul>
 
 
@@ -280,15 +275,16 @@ If a new attribute exchange protocol is needed and if so, requirements for that 
 	<p>The Working Group will actively seek to base its
 deliverables on specifications that have been socialized
 in <a href="/community/">W3C Community Groups</a> or contributed
-as <a href="http://www.w3.org/Submission/">W3C Member
-	    Submissions</a>.</p>
+as <a href="http://www.w3.org/Submission/">W3C Member Submissions</a>.
+The work of the <a href="https://www.w3.org/community/credentials/">Credentials Community Group</a> and the Verifiable Claims Task Force of the
+<a href="https://www.w3.org/Payments/IG/">Web Payments Interest Group</a> are of direct relevance and will be the Working Group's starting point.</p>
 
 	<h4 id="interop-criteria">Interoperability Success Criteria</h4>
 
 	<p>The Working Group will fulfill the <a href="http://www.w3.org/2015/Process-20150901/#implementation-experience">implementation experience required by the W3C Process</a> as follows:</p>
 	<ul>
-	  <li>The Working Group will develop test suites for Recommendation-track specifications.</li>
-	  <li>The group will seek independent interoperable implementations by two software libraries.</li>
+	  <li>The Working Group will develop test suites for any relevant future Recommendation-track specifications.</li>
+	  <li>The group will seek evidence of independent interoperable uses of the vocabulary by at least two independent entities in the payments and education sectors.</li>
 	  <li>For any implementation cited to establish interoperability success, the Working Group will work with the WAI Protocols and Formats Working Group (or its successor) to help communicate accessibility issues to the developers.</li>
 	</ul>
         <h4 id="milestones">Milestones</h4>
@@ -317,8 +313,13 @@ as <a href="http://www.w3.org/Submission/">W3C Member
                 </th>
             </tr>
             <tr>
+                <th rowspan="1" colspan="1">Verifiable Claims Use Cases &amp; Requirements</th>
+                <td class="WD1" rowspan="1" colspan="3">March 2017</td>
+                <td class="REC" rowspan="1" colspan="3">(NOTE) November 2017</td>
+            </tr>
+            <tr>
                 <th rowspan="1" colspan="1">Verifiable Claims Data Model and Syntax(es)</th>
-                <td class="WD1" rowspan="1" colspan="1">March 2017</td>
+                <td class="WD1" rowspan="1" colspan="1">April 2017</td>
                 <td class="CR" rowspan="1" colspan="1">December 2017</td>
                 <td class="PR" rowspan="1" colspan="1">July 2018</td>
                 <td class="REC" rowspan="1" colspan="1">October 2018</td>
